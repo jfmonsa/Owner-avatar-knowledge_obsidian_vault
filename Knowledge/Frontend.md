@@ -29,6 +29,7 @@
 + Solid: signals
 # Mix Notes
 + [[CSS]]
++ [[Tailwind]]
 + [[Frontend - Architectures]]
 # Modern React
 + zustand

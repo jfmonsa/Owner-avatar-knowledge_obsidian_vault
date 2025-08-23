@@ -251,8 +251,8 @@ delete user?.name; // delete user.name if user exists
 > [!WARNING]
 > We should use ?. only where it’s ok that something doesn’t exist.
 ## 18. Symbol
-+ Only two primitive types can be object property keys: string, symbol
-+ Otherwise if someone uses another type it will be converted to string
++ Only two primitive types can be object property keys: **string**, **symbol**
++ Symbol is a primitive unique value with an optional description that can be used as the key for an objetct
 + Symbol represents a unique identifier
 
 > Symbols are guaranteed to be unique. Even if we create many symbols with exactly the same description

@@ -39,7 +39,7 @@
 + indent level should be less than one or two (==guard clauses)
 + A function should contain only statements at the same level of abstraction (**One level Of abstraction Per function**)
 	+ So we make sure functions do one thing
-	+ Mixing levels of abstraction within a function si always confusing, Readers may not be able to tell wether a particular expression is an essential concept or a detail
+	+ Mixing levels of abstraction within a function is always confusing, Readers may not be able to tell wether a particular expression is an essential concept or a detail
 + **Stepdown Rule** We want the code to read like a top-down narrative. We want every function to be followed by those at the next level of abstraction
 + Short number of arguments (max. three) (larger number of arguments require very special justification) -> more testable code (test combination of arguments)
 + don't use output arguments, instead use `returns` -> **Avoid Side-effects**

@@ -243,11 +243,15 @@ v-model simplify the above to:
 **Class Binding**
 se utiliza para agregar o eliminar clases CSS en un elemento HTML de manera dinámica, basada en los datos del componente.
 
+```vue
+<div :class="{ active: isActive }"></div>
+```
+
 **Style Binding**
 se utiliza para aplicar estilos en línea (inline styles) a un elemento HTML de manera dinámica, basada en los datos del componente
-
----
-+ `<style  scoped> /* styles */ </style>`
+```vue
+<div :style="{ 'font-size': fontSize + 'px' }"></div>
+```
 ## 10 - Components
 + split UI into independent and reusable pieces
 + When a build step is involved we usually use  SFC with `.vue`
@@ -361,9 +365,18 @@ watch(id, (newId) => {
 + reusing stateful logic
 + helper or aux functions are used for stateless logic
 
+## Fallthrought attrs
+ `v-bind="$attrs"` is used to explicitly pass "fallthrough attributes" from a parent component to a specific element within a child component's template.
+
+Understanding Fallthrough Attributes:
+
+- Fallthrough attributes are attributes (and event listeners) applied to a component's tag in the parent, but which are not declared as `props` or `emits` within the child component.
+- Examples include `class`, `style`, `id`, `data-*` attributes, and `v-on` listeners for events not explicitly emitted by the child
+
 ## Custom Directives
 + intended for reusing logic that involves low-level DOM access on plain elements.
 + should only be used when the desired functionality can only be achieved via direct DOM manipulation.
+
 # Quasar
 + Vue.js Framework
 + various build modes SPA, SSR, PWA, Mobile app, Desktop app & Browser Extension

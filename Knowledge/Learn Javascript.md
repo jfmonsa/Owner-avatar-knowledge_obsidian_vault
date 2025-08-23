@@ -41,3 +41,78 @@
 + Ideal when you have multiple cpu-intensive work at the same time
 + not useful for I/O output operations (reading / writing from DB or disks) because it no depends on cpu
 + n available cores depends on ==actual physical cores of cpu==
+
+
+# Quick Methods to learn
++ **num.toFixed(n)** truncates num to n decimals
++ **arr.splice(a, b)**: remove elems from elms[a] to elms[b-1] and returns and array of removed elems
++ arr.slice(a,b) returns new arr copying all items from elms[a] to elms[b-1]
++ arr.forEach( fn(item, idx, arr))
++ **arr.find(fn )** return the elm if found it
++ arr.sort(): sort array in place, items are sorted as strings by default, so provide a function arg arr.sort( (a,b) => a-b )
++ arr.reverse() reverse the order of elements in an array
++ str.split(), arr.join('')
++ arr.reduce( fn(acc, item, idx, arr), acc): used to calc a single value
+
+```javascript
+function compare(a, b) {
+  if (a > b) return 1; // if the first value is greater than the second
+  if (a == b) return 0; // if values are equal
+  if (a < b) return -1; // if the first value is less than the second
+}
+```
+
+arr.some( )
+arr.sort()
+arr.reduce( fn, acc)
+
+**Tarea**: recrear estas funciones en golang
+
+# DOM
++ `document` object is the entry point
+![[Pasted image 20250522111131.png]]
++ DOM collections are no arrays but array-like iterable objects, so we can use for of
+	+ are **read-only**
+	+ collections are live
++ `Array.from` to create a “real” array from the collection, if we want array methods:
+
+### Access Elements, exercise
++ For each tag provide a way to access it
+
+```html
+<html>
+<body>
+  <div>Users:</div>
+  <ul>
+    <li>John</li>
+    <li>Pete</li>
+  </ul>
+</body>
+</html>
+```
+
+```js
+// div
+document.body.firstElementChild
+document.body.children[0]
+document.body.childNodes[1] // becachuse childNodes[0] is "\n" char
+
+// ul
+document.body.lastElementChild
+document.body.children[1]
+
+// li
+document.body.lastElementChild.lastElementChild
+```
+
+### Query
++ getElementById <- return the element
++ querySelectorAll(<css selector (string)>) <- return a collection
++ querySelector <- first coincidence
+---
++ querySelectorAll: return static collection
++ getElementBy*: return live collection
+
+### DOM Node Classes
++ Class hierarchy
+![[Pasted image 20250522120948.png]]

@@ -129,8 +129,25 @@ sistency),
 ![[Pasted image 20250303235343.png]]
 Prune
 
+# Elimination of Symmetries
++ Smaller search tree
 ### Heuristics in minizinc
 ![[Pasted image 20250304000007.png]]
+
+# Taller 2
++ c u m u l a t i v e ( array [ int ] o f var int: s , array [ int ] o f var int:
+d , array [ int ] o f var int: r , var int: b )
+
+# Reification
+**Usos principales**
+1. Permite activar o desactivar restricciones según el valor de una variable booleana.
+2. **Optimización condicional**: Permite usar variables booleanas para contar o ponderar restricciones activas en un modelo.
+
+# Parcial
+3
+---
++ Toda librería de minizinc debería tener una versión reificada de sus predicados
+
 # Concepts, Techniques, and Models of Computer Programming (BOOK)
 + A programming laguage favors certains things
 + Concepts organized in terms of computation models

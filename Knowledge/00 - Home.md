@@ -16,6 +16,7 @@
 + [[Backend]]: frameworks
 + [[UI - UX]]
 + [[DevOps]]
++ [[Prompt Engineering]]
 ### Tools
 + [[Git]]
 + [[Docker]]
@@ -23,6 +24,7 @@
 ## Programming Languages and Technologies
 + [[Learning Java]]
 + [[Learning C++]]
++ [[Learning Go]]
 + [[Learn Javascript]]
 	+ [[TypeScript]]
 + [[WebAssembly]]
@@ -47,6 +49,7 @@
 + [[Constraint Programming (CP)]]
 + [[Computational Complexity Theory]]
 + [[Seminario Trabajo de Grado]]
++ [[Administración de Proyectos]]
 + [[Fundamentos Gestion Tecnologíca]]
 ---
 # Other

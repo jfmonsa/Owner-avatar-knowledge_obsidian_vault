@@ -28,6 +28,7 @@
 + [[Learn Javascript]]
 	+ [[TypeScript]]
 + [[WebAssembly]]
++ [[Bash]]
 ## Mix
 + [[Linux Ricing]] Customize your environment with arch Linux
 + Vim
@@ -51,6 +52,8 @@
 + [[Seminario Trabajo de Grado]]
 + [[Administración de Proyectos]]
 + [[Fundamentos Gestion Tecnologíca]]
+### Semestre 9
++ [[Ingenieria Economica]]
 ---
 # Other
 +  [[Templates index]]
